@@ -1,0 +1,220 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
+@import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
+html, body {
+    font-family: 'Poppins', sans-serif;
+    color: #222;
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden;
+}
+
+.navbar{
+box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+}
+
+.navbar-nav li {
+    padding-right: 1.2rem;
+}
+
+.nav-link {
+    font-size: 1.1em !important;
+}
+
+.navbar-brand {
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-caption {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.carousel-caption h1 {
+    font-size: 500%;
+    text-transform: uppercase;
+    text-shadow: 1px 1px 10px #000;
+}
+
+.carousel-caption h3 {
+    font-size: 200%;
+    font-weight: 500;
+    text-shadow: 1px 1px 10px #000;
+}
+
+#footerBrand {
+    font-family: "Kaushan Script", "Helvetica Neue", Helvetica, Arial, cursive;
+}
+
+.btn-primary {
+    background-color: blueviolet;
+    outline-color: blueviolet;
+    border-color: blueviolet;
+}
+
+.btn-primary:hover {
+    background-color: darkmagenta;
+    outline-color: darkmagenta;
+    border-color: darkmagenta;
+}
+
+.jumbotron {
+    padding: 1rem;
+    border-radius: 0;
+}
+
+.padding {
+    padding-bottom: 10rem;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.welcome {
+    width: 75%;
+    margin: 0 auto;
+    padding-top: 2rem;
+}
+
+.welcome hr {
+    border-top: 2px solid #b4b4b4;
+    width: 95%;
+    margin-top: .5rem;
+    margin-bottom: 1rem;
+}
+
+.fa-code {
+    color: #e54d26;
+}
+
+.fa-bootstrap {
+    color: #563d7c;
+}
+
+.fa-css3 {
+    color: #2163af;
+}
+
+.fa-angular {
+    color: darkred;
+}
+
+.fa-node {
+    color: green;
+}
+
+.fa-react {
+    color: lightskyblue;
+}
+
+.fa-code, .fa-bootstrap, .fa-css3, .fa-angular, .fa-react, .fa-node {
+    font-size: 4em;
+    margin: 1;
+}
+
+/*---Media Queries --*/
+
+@media (max-width: 860px) {
+    .carousel-caption h1 {
+        font-size: 250%;
+    }
+    .carousel-caption h3 {
+        font-size: 100%;
+    }
+}
+
+@media (max-width: 768px) {}
+
+@media (max-width: 430px) {
+    .carousel-caption h1 {
+        font-size: 125%;
+    }
+    .carousel-caption h3 {
+        font-size: 50%;
+    }
+    .carousel-caption button {
+        visibility: collapse;
+    }
+    .display-4 {
+        font-size: 35px;
+    }
+}
+
+/*---Firefox Bug Fix --*/
+
+.carousel-item {
+    transition: -webkit-transform 0.5s ease;
+    transition: transform 0.5s ease;
+    transition: transform 0.5s ease, -webkit-transform 0.5s ease;
+    -webkit-transform-style: preserve-3d;
+    -moz-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    -webkit-backface-visibility: visible;
+    backface-visibility: visible;
+}
+
+/*--- Fixed Background Image --*/
+
+figure {
+    position: relative;
+    width: 100%;
+    height: 60%;
+    margin: 0!important;
+}
+
+.fixed-wrap {
+    clip: rect(0, auto, auto, 0);
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#fixed {
+    background-image: url('img/mac.png');
+    position: fixed;
+    display: block;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center center;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    will-change: transform;
+}
+
+/*--- Bootstrap Padding Fix --*/
+
+[class*="col-"] {
+    padding: 1rem;
+}
+
+/*
+Extra small (xs) devices (portrait phones, less than 576px)
+No media query since this is the default in Bootstrap
+
+Small (sm) devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+Medium (md) devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+Large (lg) devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+Extra (xl) large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... }
+*/
