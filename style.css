@@ -1,6 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,700');
 @import url('https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap');
-html, body {
+
+html,
+body {
     font-family: 'Poppins', sans-serif;
     color: #222;
     width: 100%;
@@ -11,8 +13,8 @@ html, body {
 }
 
 
-.navbar{
-box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
+.navbar {
+    box-shadow: 0 2px 2px -2px rgba(0, 0, 0, .2);
 }
 
 .navbar-nav li {
@@ -118,7 +120,13 @@ box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     color: lightskyblue;
 }
 
-.fa-code, .fa-bootstrap, .fa-css3, .fa-angular, .fa-react, .fa-node {
+.fa-code,
+.fa-bootstrap,
+.fa-css3,
+.fa-angular,
+.fa-react,
+.fa-node
+.fa-java {
     font-size: 4em;
     margin: 1;
 }
@@ -129,6 +137,7 @@ box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     .carousel-caption h1 {
         font-size: 250%;
     }
+
     .carousel-caption h3 {
         font-size: 100%;
     }
@@ -140,12 +149,15 @@ box-shadow: 0 2px 2px -2px rgba(0,0,0,.2);
     .carousel-caption h1 {
         font-size: 125%;
     }
+
     .carousel-caption h3 {
         font-size: 50%;
     }
+
     .carousel-caption button {
         visibility: collapse;
     }
+
     .display-4 {
         font-size: 35px;
     }
@@ -170,7 +182,7 @@ figure {
     position: relative;
     width: 100%;
     height: 60%;
-    margin: 0!important;
+    margin: 0 !important;
 }
 
 .fixed-wrap {
@@ -196,6 +208,16 @@ figure {
     transform: translateZ(0);
     will-change: transform;
 }
+
+.java{
+    width:60px;
+    height:30px;
+}
+
+.cardfavicon {
+    font-size: 30px;
+}
+
 
 /*--- Bootstrap Padding Fix --*/
 
